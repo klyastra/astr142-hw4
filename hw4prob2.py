@@ -19,7 +19,9 @@ from astropy.wcs import WCS
 image_services = vo.regsearch(servicetype='sia',waveband='optical')
 #  this next line will print out available services.  See which one is appropriate.
 #image_services.to_table()['ivoid','short_name','res_title'].pprint(max_lines=-1, max_width=-1)
-dss_service = image_services['DSS'] # Original Digitized Sky Survey. Note that it is case-sensiive.
+dss_service = image_services['DSS'] # Original Digitized Sky Survey. Note that it is case-sensitive.
+# Originally intended to be SDSSDR3-G for Sloan Digital Sky Survey g-band, but that service is unavailable. Hence I've substituted it with the Original Digitized Sky Survey (DSS).
+# Since DSS is much older than SDSSDR3-G, 2MASS point source positions may differ due to proper motion between the years.
 
 # set up service for IRSA 2MASS point-source catalog retrieval
 psc_services = vo.regsearch(servicetype='tap',waveband='infrared')
