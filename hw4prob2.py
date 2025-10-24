@@ -2,6 +2,7 @@
 # (c) 2025 Michael Fitzgerald (mpfitz@ucla.edu)
 #
 # Some code for querying the virtual observatory to make finder charts
+# NOTE: I am using astroquery v0.4.6 on Ubuntu. I've tried updating, but this is the latest available.
 #
 
 import numpy as np

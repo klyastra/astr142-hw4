@@ -2,7 +2,7 @@
 # (c) 2023 Michael Fitzgerald (mpfitz@ucla.edu)
 #
 # Some code for querying Simbad for making a target list.
-#
+# NOTE: I am using astroquery 0.4.6 on Ubuntu. I've tried to update it but this is the latest available.
 
 
 from astroquery.simbad import Simbad

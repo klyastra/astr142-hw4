@@ -2,7 +2,8 @@
 # (c) 2023 Michael Fitzgerald (mpfitz@ucla.edu)
 #
 # Some code for querying Vizier for catalog to construct a CMD.
-#
+# NOTE: I am using astroquery 0.4.6 on Ubuntu. I've tried to update it but this is the latest available.
+
 
 
 from astroquery.vizier import Vizier
